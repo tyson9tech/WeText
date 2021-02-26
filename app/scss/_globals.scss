@@ -22,7 +22,7 @@ html {
     .headers{
         display: flex;
         align-items: center;
-        height: 7vh;
+        height: 10vh;
         width: 100%;
         background-color: #0a0909;
         box-shadow: 0rem 0rem 1rem #0a0909;
@@ -70,8 +70,8 @@ html {
             #confPassField{
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 1rem;
-                width: 95%;
+                margin-bottom: 2rem;
+                width: 100%;
                 
                 label{
                     letter-spacing: .0625rem;
@@ -98,8 +98,10 @@ html {
 
             #signUpBtn,
             #signInBtn {
-                padding: .1rem .5rem;
-                margin-top: 1rem;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: .2rem 1rem;
+                margin: 1.5rem;
                 cursor: pointer;
             }
         }

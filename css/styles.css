@@ -129,7 +129,6 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 2rem;
-  height: 10vh;
   width: 100%;
 }
 

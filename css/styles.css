@@ -92,12 +92,11 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   padding: 1.5rem;
   border-radius: 1rem;
-  background-color: #00000099;
+  background-color: #100d0d;
   width: 20rem;
-  height: 70vh;
 }
 
 .pages .signUpContainer .signUpForm #formTittle,

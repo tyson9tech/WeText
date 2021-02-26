@@ -16,7 +16,7 @@ html {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background: $firstColor;
     color: $secondColor;
 
@@ -58,7 +58,7 @@ html {
             padding: 1.5rem;
             border-radius: 1rem;
             background-color: #00000099;
-            width: 90vw;
+            width: 20rem;
             height: 70vh;
 
             #formTittle{

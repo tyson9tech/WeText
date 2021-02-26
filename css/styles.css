@@ -23,7 +23,6 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
   background: -webkit-gradient(linear, right top, left top, from(#Ee6b3B), to(#1d130b));
   background: linear-gradient(to left, #Ee6b3B, #1d130b);

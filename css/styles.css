@@ -1,0 +1,530 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: -webkit-gradient(linear, right top, left top, from(#Ee6b3B), to(#1d130b));
+  background: linear-gradient(to left, #Ee6b3B, #1d130b);
+  color: #ffffff;
+}
+
+.pages .headers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #0a0909;
+  -webkit-box-shadow: 0rem 0rem 1rem #0a0909;
+          box-shadow: 0rem 0rem 1rem #0a0909;
+}
+
+.pages .headers #logo {
+  margin-left: 3rem;
+}
+
+.pages .signUpContainer,
+.pages .signInContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 1.5rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  height: 90vh;
+}
+
+.pages .signUpContainer #welcomMsg,
+.pages .signInContainer #welcomMsg {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.pages .signUpContainer .signUpForm,
+.pages .signUpContainer .signInForm,
+.pages .signInContainer .signUpForm,
+.pages .signInContainer .signInForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #00000099;
+}
+
+.pages .signUpContainer .signUpForm #formTittle,
+.pages .signUpContainer .signInForm #formTittle,
+.pages .signInContainer .signUpForm #formTittle,
+.pages .signInContainer .signInForm #formTittle {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.pages .signUpContainer .signUpForm #uNameField,
+.pages .signUpContainer .signUpForm #emailField,
+.pages .signUpContainer .signUpForm #passField,
+.pages .signUpContainer .signUpForm #confPassField,
+.pages .signUpContainer .signInForm #uNameField,
+.pages .signUpContainer .signInForm #emailField,
+.pages .signUpContainer .signInForm #passField,
+.pages .signUpContainer .signInForm #confPassField,
+.pages .signInContainer .signUpForm #uNameField,
+.pages .signInContainer .signUpForm #emailField,
+.pages .signInContainer .signUpForm #passField,
+.pages .signInContainer .signUpForm #confPassField,
+.pages .signInContainer .signInForm #uNameField,
+.pages .signInContainer .signInForm #emailField,
+.pages .signInContainer .signInForm #passField,
+.pages .signInContainer .signInForm #confPassField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+  width: 95%;
+}
+
+.pages .signUpContainer .signUpForm #uNameField label,
+.pages .signUpContainer .signUpForm #emailField label,
+.pages .signUpContainer .signUpForm #passField label,
+.pages .signUpContainer .signUpForm #confPassField label,
+.pages .signUpContainer .signInForm #uNameField label,
+.pages .signUpContainer .signInForm #emailField label,
+.pages .signUpContainer .signInForm #passField label,
+.pages .signUpContainer .signInForm #confPassField label,
+.pages .signInContainer .signUpForm #uNameField label,
+.pages .signInContainer .signUpForm #emailField label,
+.pages .signInContainer .signUpForm #passField label,
+.pages .signInContainer .signUpForm #confPassField label,
+.pages .signInContainer .signInForm #uNameField label,
+.pages .signInContainer .signInForm #emailField label,
+.pages .signInContainer .signInForm #passField label,
+.pages .signInContainer .signInForm #confPassField label {
+  letter-spacing: .0625rem;
+  font-weight: bold;
+}
+
+.pages .signUpContainer .signUpForm #uNameField #username,
+.pages .signUpContainer .signUpForm #uNameField #email,
+.pages .signUpContainer .signUpForm #uNameField #password,
+.pages .signUpContainer .signUpForm #uNameField #confPassword,
+.pages .signUpContainer .signUpForm #emailField #username,
+.pages .signUpContainer .signUpForm #emailField #email,
+.pages .signUpContainer .signUpForm #emailField #password,
+.pages .signUpContainer .signUpForm #emailField #confPassword,
+.pages .signUpContainer .signUpForm #passField #username,
+.pages .signUpContainer .signUpForm #passField #email,
+.pages .signUpContainer .signUpForm #passField #password,
+.pages .signUpContainer .signUpForm #passField #confPassword,
+.pages .signUpContainer .signUpForm #confPassField #username,
+.pages .signUpContainer .signUpForm #confPassField #email,
+.pages .signUpContainer .signUpForm #confPassField #password,
+.pages .signUpContainer .signUpForm #confPassField #confPassword,
+.pages .signUpContainer .signInForm #uNameField #username,
+.pages .signUpContainer .signInForm #uNameField #email,
+.pages .signUpContainer .signInForm #uNameField #password,
+.pages .signUpContainer .signInForm #uNameField #confPassword,
+.pages .signUpContainer .signInForm #emailField #username,
+.pages .signUpContainer .signInForm #emailField #email,
+.pages .signUpContainer .signInForm #emailField #password,
+.pages .signUpContainer .signInForm #emailField #confPassword,
+.pages .signUpContainer .signInForm #passField #username,
+.pages .signUpContainer .signInForm #passField #email,
+.pages .signUpContainer .signInForm #passField #password,
+.pages .signUpContainer .signInForm #passField #confPassword,
+.pages .signUpContainer .signInForm #confPassField #username,
+.pages .signUpContainer .signInForm #confPassField #email,
+.pages .signUpContainer .signInForm #confPassField #password,
+.pages .signUpContainer .signInForm #confPassField #confPassword,
+.pages .signInContainer .signUpForm #uNameField #username,
+.pages .signInContainer .signUpForm #uNameField #email,
+.pages .signInContainer .signUpForm #uNameField #password,
+.pages .signInContainer .signUpForm #uNameField #confPassword,
+.pages .signInContainer .signUpForm #emailField #username,
+.pages .signInContainer .signUpForm #emailField #email,
+.pages .signInContainer .signUpForm #emailField #password,
+.pages .signInContainer .signUpForm #emailField #confPassword,
+.pages .signInContainer .signUpForm #passField #username,
+.pages .signInContainer .signUpForm #passField #email,
+.pages .signInContainer .signUpForm #passField #password,
+.pages .signInContainer .signUpForm #passField #confPassword,
+.pages .signInContainer .signUpForm #confPassField #username,
+.pages .signInContainer .signUpForm #confPassField #email,
+.pages .signInContainer .signUpForm #confPassField #password,
+.pages .signInContainer .signUpForm #confPassField #confPassword,
+.pages .signInContainer .signInForm #uNameField #username,
+.pages .signInContainer .signInForm #uNameField #email,
+.pages .signInContainer .signInForm #uNameField #password,
+.pages .signInContainer .signInForm #uNameField #confPassword,
+.pages .signInContainer .signInForm #emailField #username,
+.pages .signInContainer .signInForm #emailField #email,
+.pages .signInContainer .signInForm #emailField #password,
+.pages .signInContainer .signInForm #emailField #confPassword,
+.pages .signInContainer .signInForm #passField #username,
+.pages .signInContainer .signInForm #passField #email,
+.pages .signInContainer .signInForm #passField #password,
+.pages .signInContainer .signInForm #passField #confPassword,
+.pages .signInContainer .signInForm #confPassField #username,
+.pages .signInContainer .signInForm #confPassField #email,
+.pages .signInContainer .signInForm #confPassField #password,
+.pages .signInContainer .signInForm #confPassField #confPassword {
+  background-color: transparent;
+  padding: .2rem;
+  margin-top: .5rem;
+  border: none;
+  outline: none;
+  border-bottom: .1rem solid #2c1f1f;
+  color: #ffffff;
+}
+
+.pages .signUpContainer .signUpForm #uNameField #username::focus, .pages .signUpContainer .signUpForm #uNameField #username::-moz-selection,
+.pages .signUpContainer .signUpForm #uNameField #email::focus,
+.pages .signUpContainer .signUpForm #uNameField #email::-moz-selection,
+.pages .signUpContainer .signUpForm #uNameField #password::focus,
+.pages .signUpContainer .signUpForm #uNameField #password::-moz-selection,
+.pages .signUpContainer .signUpForm #uNameField #confPassword::focus,
+.pages .signUpContainer .signUpForm #uNameField #confPassword::-moz-selection,
+.pages .signUpContainer .signUpForm #emailField #username::focus,
+.pages .signUpContainer .signUpForm #emailField #username::-moz-selection,
+.pages .signUpContainer .signUpForm #emailField #email::focus,
+.pages .signUpContainer .signUpForm #emailField #email::-moz-selection,
+.pages .signUpContainer .signUpForm #emailField #password::focus,
+.pages .signUpContainer .signUpForm #emailField #password::-moz-selection,
+.pages .signUpContainer .signUpForm #emailField #confPassword::focus,
+.pages .signUpContainer .signUpForm #emailField #confPassword::-moz-selection,
+.pages .signUpContainer .signUpForm #passField #username::focus,
+.pages .signUpContainer .signUpForm #passField #username::-moz-selection,
+.pages .signUpContainer .signUpForm #passField #email::focus,
+.pages .signUpContainer .signUpForm #passField #email::-moz-selection,
+.pages .signUpContainer .signUpForm #passField #password::focus,
+.pages .signUpContainer .signUpForm #passField #password::-moz-selection,
+.pages .signUpContainer .signUpForm #passField #confPassword::focus,
+.pages .signUpContainer .signUpForm #passField #confPassword::-moz-selection,
+.pages .signUpContainer .signUpForm #confPassField #username::focus,
+.pages .signUpContainer .signUpForm #confPassField #username::-moz-selection,
+.pages .signUpContainer .signUpForm #confPassField #email::focus,
+.pages .signUpContainer .signUpForm #confPassField #email::-moz-selection,
+.pages .signUpContainer .signUpForm #confPassField #password::focus,
+.pages .signUpContainer .signUpForm #confPassField #password::-moz-selection,
+.pages .signUpContainer .signUpForm #confPassField #confPassword::focus,
+.pages .signUpContainer .signUpForm #confPassField #confPassword::-moz-selection,
+.pages .signUpContainer .signInForm #uNameField #username::focus,
+.pages .signUpContainer .signInForm #uNameField #username::-moz-selection,
+.pages .signUpContainer .signInForm #uNameField #email::focus,
+.pages .signUpContainer .signInForm #uNameField #email::-moz-selection,
+.pages .signUpContainer .signInForm #uNameField #password::focus,
+.pages .signUpContainer .signInForm #uNameField #password::-moz-selection,
+.pages .signUpContainer .signInForm #uNameField #confPassword::focus,
+.pages .signUpContainer .signInForm #uNameField #confPassword::-moz-selection,
+.pages .signUpContainer .signInForm #emailField #username::focus,
+.pages .signUpContainer .signInForm #emailField #username::-moz-selection,
+.pages .signUpContainer .signInForm #emailField #email::focus,
+.pages .signUpContainer .signInForm #emailField #email::-moz-selection,
+.pages .signUpContainer .signInForm #emailField #password::focus,
+.pages .signUpContainer .signInForm #emailField #password::-moz-selection,
+.pages .signUpContainer .signInForm #emailField #confPassword::focus,
+.pages .signUpContainer .signInForm #emailField #confPassword::-moz-selection,
+.pages .signUpContainer .signInForm #passField #username::focus,
+.pages .signUpContainer .signInForm #passField #username::-moz-selection,
+.pages .signUpContainer .signInForm #passField #email::focus,
+.pages .signUpContainer .signInForm #passField #email::-moz-selection,
+.pages .signUpContainer .signInForm #passField #password::focus,
+.pages .signUpContainer .signInForm #passField #password::-moz-selection,
+.pages .signUpContainer .signInForm #passField #confPassword::focus,
+.pages .signUpContainer .signInForm #passField #confPassword::-moz-selection,
+.pages .signUpContainer .signInForm #confPassField #username::focus,
+.pages .signUpContainer .signInForm #confPassField #username::-moz-selection,
+.pages .signUpContainer .signInForm #confPassField #email::focus,
+.pages .signUpContainer .signInForm #confPassField #email::-moz-selection,
+.pages .signUpContainer .signInForm #confPassField #password::focus,
+.pages .signUpContainer .signInForm #confPassField #password::-moz-selection,
+.pages .signUpContainer .signInForm #confPassField #confPassword::focus,
+.pages .signUpContainer .signInForm #confPassField #confPassword::-moz-selection,
+.pages .signInContainer .signUpForm #uNameField #username::focus,
+.pages .signInContainer .signUpForm #uNameField #username::-moz-selection,
+.pages .signInContainer .signUpForm #uNameField #email::focus,
+.pages .signInContainer .signUpForm #uNameField #email::-moz-selection,
+.pages .signInContainer .signUpForm #uNameField #password::focus,
+.pages .signInContainer .signUpForm #uNameField #password::-moz-selection,
+.pages .signInContainer .signUpForm #uNameField #confPassword::focus,
+.pages .signInContainer .signUpForm #uNameField #confPassword::-moz-selection,
+.pages .signInContainer .signUpForm #emailField #username::focus,
+.pages .signInContainer .signUpForm #emailField #username::-moz-selection,
+.pages .signInContainer .signUpForm #emailField #email::focus,
+.pages .signInContainer .signUpForm #emailField #email::-moz-selection,
+.pages .signInContainer .signUpForm #emailField #password::focus,
+.pages .signInContainer .signUpForm #emailField #password::-moz-selection,
+.pages .signInContainer .signUpForm #emailField #confPassword::focus,
+.pages .signInContainer .signUpForm #emailField #confPassword::-moz-selection,
+.pages .signInContainer .signUpForm #passField #username::focus,
+.pages .signInContainer .signUpForm #passField #username::-moz-selection,
+.pages .signInContainer .signUpForm #passField #email::focus,
+.pages .signInContainer .signUpForm #passField #email::-moz-selection,
+.pages .signInContainer .signUpForm #passField #password::focus,
+.pages .signInContainer .signUpForm #passField #password::-moz-selection,
+.pages .signInContainer .signUpForm #passField #confPassword::focus,
+.pages .signInContainer .signUpForm #passField #confPassword::-moz-selection,
+.pages .signInContainer .signUpForm #confPassField #username::focus,
+.pages .signInContainer .signUpForm #confPassField #username::-moz-selection,
+.pages .signInContainer .signUpForm #confPassField #email::focus,
+.pages .signInContainer .signUpForm #confPassField #email::-moz-selection,
+.pages .signInContainer .signUpForm #confPassField #password::focus,
+.pages .signInContainer .signUpForm #confPassField #password::-moz-selection,
+.pages .signInContainer .signUpForm #confPassField #confPassword::focus,
+.pages .signInContainer .signUpForm #confPassField #confPassword::-moz-selection,
+.pages .signInContainer .signInForm #uNameField #username::focus,
+.pages .signInContainer .signInForm #uNameField #username::-moz-selection,
+.pages .signInContainer .signInForm #uNameField #email::focus,
+.pages .signInContainer .signInForm #uNameField #email::-moz-selection,
+.pages .signInContainer .signInForm #uNameField #password::focus,
+.pages .signInContainer .signInForm #uNameField #password::-moz-selection,
+.pages .signInContainer .signInForm #uNameField #confPassword::focus,
+.pages .signInContainer .signInForm #uNameField #confPassword::-moz-selection,
+.pages .signInContainer .signInForm #emailField #username::focus,
+.pages .signInContainer .signInForm #emailField #username::-moz-selection,
+.pages .signInContainer .signInForm #emailField #email::focus,
+.pages .signInContainer .signInForm #emailField #email::-moz-selection,
+.pages .signInContainer .signInForm #emailField #password::focus,
+.pages .signInContainer .signInForm #emailField #password::-moz-selection,
+.pages .signInContainer .signInForm #emailField #confPassword::focus,
+.pages .signInContainer .signInForm #emailField #confPassword::-moz-selection,
+.pages .signInContainer .signInForm #passField #username::focus,
+.pages .signInContainer .signInForm #passField #username::-moz-selection,
+.pages .signInContainer .signInForm #passField #email::focus,
+.pages .signInContainer .signInForm #passField #email::-moz-selection,
+.pages .signInContainer .signInForm #passField #password::focus,
+.pages .signInContainer .signInForm #passField #password::-moz-selection,
+.pages .signInContainer .signInForm #passField #confPassword::focus,
+.pages .signInContainer .signInForm #passField #confPassword::-moz-selection,
+.pages .signInContainer .signInForm #confPassField #username::focus,
+.pages .signInContainer .signInForm #confPassField #username::-moz-selection,
+.pages .signInContainer .signInForm #confPassField #email::focus,
+.pages .signInContainer .signInForm #confPassField #email::-moz-selection,
+.pages .signInContainer .signInForm #confPassField #password::focus,
+.pages .signInContainer .signInForm #confPassField #password::-moz-selection,
+.pages .signInContainer .signInForm #confPassField #confPassword::focus,
+.pages .signInContainer .signInForm #confPassField #confPassword::-moz-selection {
+  background-color: transparent;
+}
+
+.pages .signUpContainer .signUpForm #uNameField #username::focus, .pages .signUpContainer .signUpForm #uNameField #username::selection,
+.pages .signUpContainer .signUpForm #uNameField #email::focus,
+.pages .signUpContainer .signUpForm #uNameField #email::selection,
+.pages .signUpContainer .signUpForm #uNameField #password::focus,
+.pages .signUpContainer .signUpForm #uNameField #password::selection,
+.pages .signUpContainer .signUpForm #uNameField #confPassword::focus,
+.pages .signUpContainer .signUpForm #uNameField #confPassword::selection,
+.pages .signUpContainer .signUpForm #emailField #username::focus,
+.pages .signUpContainer .signUpForm #emailField #username::selection,
+.pages .signUpContainer .signUpForm #emailField #email::focus,
+.pages .signUpContainer .signUpForm #emailField #email::selection,
+.pages .signUpContainer .signUpForm #emailField #password::focus,
+.pages .signUpContainer .signUpForm #emailField #password::selection,
+.pages .signUpContainer .signUpForm #emailField #confPassword::focus,
+.pages .signUpContainer .signUpForm #emailField #confPassword::selection,
+.pages .signUpContainer .signUpForm #passField #username::focus,
+.pages .signUpContainer .signUpForm #passField #username::selection,
+.pages .signUpContainer .signUpForm #passField #email::focus,
+.pages .signUpContainer .signUpForm #passField #email::selection,
+.pages .signUpContainer .signUpForm #passField #password::focus,
+.pages .signUpContainer .signUpForm #passField #password::selection,
+.pages .signUpContainer .signUpForm #passField #confPassword::focus,
+.pages .signUpContainer .signUpForm #passField #confPassword::selection,
+.pages .signUpContainer .signUpForm #confPassField #username::focus,
+.pages .signUpContainer .signUpForm #confPassField #username::selection,
+.pages .signUpContainer .signUpForm #confPassField #email::focus,
+.pages .signUpContainer .signUpForm #confPassField #email::selection,
+.pages .signUpContainer .signUpForm #confPassField #password::focus,
+.pages .signUpContainer .signUpForm #confPassField #password::selection,
+.pages .signUpContainer .signUpForm #confPassField #confPassword::focus,
+.pages .signUpContainer .signUpForm #confPassField #confPassword::selection,
+.pages .signUpContainer .signInForm #uNameField #username::focus,
+.pages .signUpContainer .signInForm #uNameField #username::selection,
+.pages .signUpContainer .signInForm #uNameField #email::focus,
+.pages .signUpContainer .signInForm #uNameField #email::selection,
+.pages .signUpContainer .signInForm #uNameField #password::focus,
+.pages .signUpContainer .signInForm #uNameField #password::selection,
+.pages .signUpContainer .signInForm #uNameField #confPassword::focus,
+.pages .signUpContainer .signInForm #uNameField #confPassword::selection,
+.pages .signUpContainer .signInForm #emailField #username::focus,
+.pages .signUpContainer .signInForm #emailField #username::selection,
+.pages .signUpContainer .signInForm #emailField #email::focus,
+.pages .signUpContainer .signInForm #emailField #email::selection,
+.pages .signUpContainer .signInForm #emailField #password::focus,
+.pages .signUpContainer .signInForm #emailField #password::selection,
+.pages .signUpContainer .signInForm #emailField #confPassword::focus,
+.pages .signUpContainer .signInForm #emailField #confPassword::selection,
+.pages .signUpContainer .signInForm #passField #username::focus,
+.pages .signUpContainer .signInForm #passField #username::selection,
+.pages .signUpContainer .signInForm #passField #email::focus,
+.pages .signUpContainer .signInForm #passField #email::selection,
+.pages .signUpContainer .signInForm #passField #password::focus,
+.pages .signUpContainer .signInForm #passField #password::selection,
+.pages .signUpContainer .signInForm #passField #confPassword::focus,
+.pages .signUpContainer .signInForm #passField #confPassword::selection,
+.pages .signUpContainer .signInForm #confPassField #username::focus,
+.pages .signUpContainer .signInForm #confPassField #username::selection,
+.pages .signUpContainer .signInForm #confPassField #email::focus,
+.pages .signUpContainer .signInForm #confPassField #email::selection,
+.pages .signUpContainer .signInForm #confPassField #password::focus,
+.pages .signUpContainer .signInForm #confPassField #password::selection,
+.pages .signUpContainer .signInForm #confPassField #confPassword::focus,
+.pages .signUpContainer .signInForm #confPassField #confPassword::selection,
+.pages .signInContainer .signUpForm #uNameField #username::focus,
+.pages .signInContainer .signUpForm #uNameField #username::selection,
+.pages .signInContainer .signUpForm #uNameField #email::focus,
+.pages .signInContainer .signUpForm #uNameField #email::selection,
+.pages .signInContainer .signUpForm #uNameField #password::focus,
+.pages .signInContainer .signUpForm #uNameField #password::selection,
+.pages .signInContainer .signUpForm #uNameField #confPassword::focus,
+.pages .signInContainer .signUpForm #uNameField #confPassword::selection,
+.pages .signInContainer .signUpForm #emailField #username::focus,
+.pages .signInContainer .signUpForm #emailField #username::selection,
+.pages .signInContainer .signUpForm #emailField #email::focus,
+.pages .signInContainer .signUpForm #emailField #email::selection,
+.pages .signInContainer .signUpForm #emailField #password::focus,
+.pages .signInContainer .signUpForm #emailField #password::selection,
+.pages .signInContainer .signUpForm #emailField #confPassword::focus,
+.pages .signInContainer .signUpForm #emailField #confPassword::selection,
+.pages .signInContainer .signUpForm #passField #username::focus,
+.pages .signInContainer .signUpForm #passField #username::selection,
+.pages .signInContainer .signUpForm #passField #email::focus,
+.pages .signInContainer .signUpForm #passField #email::selection,
+.pages .signInContainer .signUpForm #passField #password::focus,
+.pages .signInContainer .signUpForm #passField #password::selection,
+.pages .signInContainer .signUpForm #passField #confPassword::focus,
+.pages .signInContainer .signUpForm #passField #confPassword::selection,
+.pages .signInContainer .signUpForm #confPassField #username::focus,
+.pages .signInContainer .signUpForm #confPassField #username::selection,
+.pages .signInContainer .signUpForm #confPassField #email::focus,
+.pages .signInContainer .signUpForm #confPassField #email::selection,
+.pages .signInContainer .signUpForm #confPassField #password::focus,
+.pages .signInContainer .signUpForm #confPassField #password::selection,
+.pages .signInContainer .signUpForm #confPassField #confPassword::focus,
+.pages .signInContainer .signUpForm #confPassField #confPassword::selection,
+.pages .signInContainer .signInForm #uNameField #username::focus,
+.pages .signInContainer .signInForm #uNameField #username::selection,
+.pages .signInContainer .signInForm #uNameField #email::focus,
+.pages .signInContainer .signInForm #uNameField #email::selection,
+.pages .signInContainer .signInForm #uNameField #password::focus,
+.pages .signInContainer .signInForm #uNameField #password::selection,
+.pages .signInContainer .signInForm #uNameField #confPassword::focus,
+.pages .signInContainer .signInForm #uNameField #confPassword::selection,
+.pages .signInContainer .signInForm #emailField #username::focus,
+.pages .signInContainer .signInForm #emailField #username::selection,
+.pages .signInContainer .signInForm #emailField #email::focus,
+.pages .signInContainer .signInForm #emailField #email::selection,
+.pages .signInContainer .signInForm #emailField #password::focus,
+.pages .signInContainer .signInForm #emailField #password::selection,
+.pages .signInContainer .signInForm #emailField #confPassword::focus,
+.pages .signInContainer .signInForm #emailField #confPassword::selection,
+.pages .signInContainer .signInForm #passField #username::focus,
+.pages .signInContainer .signInForm #passField #username::selection,
+.pages .signInContainer .signInForm #passField #email::focus,
+.pages .signInContainer .signInForm #passField #email::selection,
+.pages .signInContainer .signInForm #passField #password::focus,
+.pages .signInContainer .signInForm #passField #password::selection,
+.pages .signInContainer .signInForm #passField #confPassword::focus,
+.pages .signInContainer .signInForm #passField #confPassword::selection,
+.pages .signInContainer .signInForm #confPassField #username::focus,
+.pages .signInContainer .signInForm #confPassField #username::selection,
+.pages .signInContainer .signInForm #confPassField #email::focus,
+.pages .signInContainer .signInForm #confPassField #email::selection,
+.pages .signInContainer .signInForm #confPassField #password::focus,
+.pages .signInContainer .signInForm #confPassField #password::selection,
+.pages .signInContainer .signInForm #confPassField #confPassword::focus,
+.pages .signInContainer .signInForm #confPassField #confPassword::selection {
+  background-color: transparent;
+}
+
+.pages .signUpContainer .signUpForm #signUpBtn,
+.pages .signUpContainer .signUpForm #signInBtn,
+.pages .signUpContainer .signInForm #signUpBtn,
+.pages .signUpContainer .signInForm #signInBtn,
+.pages .signInContainer .signUpForm #signUpBtn,
+.pages .signInContainer .signUpForm #signInBtn,
+.pages .signInContainer .signInForm #signUpBtn,
+.pages .signInContainer .signInForm #signInBtn {
+  padding: .1rem .5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.pages .signUpContainer #sUpMsg,
+.pages .signUpContainer #sInMsg,
+.pages .signInContainer #sUpMsg,
+.pages .signInContainer #sInMsg {
+  text-align: center;
+  width: 85%;
+}
+
+.pages .signUpContainer #sUpMsg #showSIForm,
+.pages .signUpContainer #sUpMsg #showSUForm,
+.pages .signUpContainer #sInMsg #showSIForm,
+.pages .signUpContainer #sInMsg #showSUForm,
+.pages .signInContainer #sUpMsg #showSIForm,
+.pages .signInContainer #sUpMsg #showSUForm,
+.pages .signInContainer #sInMsg #showSIForm,
+.pages .signInContainer #sInMsg #showSUForm {
+  cursor: pointer;
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.pages .showSection {
+  display: 'flex';
+}
+
+.pages .hideSection {
+  display: none;
+}

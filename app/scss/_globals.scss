@@ -1,0 +1,129 @@
+// Remove defaults stylings
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+html {
+    font-size: 100%;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: $firstColor;
+    color: $secondColor;
+
+    .headers{
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        width: 100%;
+        background-color: #0a0909;
+        box-shadow: 0rem 0rem 1rem #0a0909;
+
+        #logo{
+            margin-left: 3rem;
+        }
+    }
+
+    .signUpContainer,
+    .signInContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        transition: all 1s ease-in-out;
+        height: 90vh;
+
+        #welcomMsg{
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .signUpForm,
+        .signInForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background-color: #00000099;
+
+            #formTittle{
+                font-size: 2rem;
+                margin-bottom: 1.3rem;
+            }
+
+            #uNameField,
+            #emailField,
+            #passField,
+            #confPassField{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+                width: 95%;
+                
+                label{
+                    letter-spacing: .0625rem;
+                    font-weight: bold;
+                }
+
+                #username,
+                #email,
+                #password,
+                #confPassword{
+                    background-color: transparent;
+                    padding: .2rem;
+                    margin-top: .5rem;
+                    border: none;
+                    outline: none;
+                    border-bottom: .1rem solid #2c1f1f;
+                    color: #ffffff;
+
+                    &::focus, &::selection{
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            #signUpBtn,
+            #signInBtn {
+                padding: .1rem .5rem;
+                margin-top: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        #sUpMsg,
+        #sInMsg {
+            text-align: center;
+            width: 85%;
+
+            #showSIForm,
+            #showSUForm {
+                cursor: pointer;
+                color: #00ff00;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .showSection {
+        display: 'flex';
+    }
+
+    .hideSection {
+        display: none;
+    }
+}
